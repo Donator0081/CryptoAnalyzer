@@ -2,11 +2,8 @@ package commands;
 
 import constants.Constants;
 
-import java.util.Arrays;
-
 public class Decrypt implements Action {
     private int key;
-    private String textAfterDecrypt;
 
     @Override
     public String doAction(String text) {
@@ -24,9 +21,8 @@ public class Decrypt implements Action {
             }
             counter++;
         }
-        textAfterDecrypt = builder.toString();
 
-        return textAfterDecrypt;
+        return builder.toString();
     }
 
     public Decrypt(int key) {

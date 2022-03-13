@@ -2,11 +2,9 @@ package commands;
 
 import constants.Constants;
 
-import java.util.Arrays;
 
 public class Encrypt implements Action {
     private int key;
-    private String textAfterEncrypt;
 
 
     @Override
@@ -25,9 +23,8 @@ public class Encrypt implements Action {
             }
             counter++;
         }
-        textAfterEncrypt = builder.toString();
 
-        return textAfterEncrypt;
+        return builder.toString();
     }
 
     public Encrypt(int key) {
