@@ -1,0 +1,50 @@
+.button {
+    -fx-text-fill: black;
+    -fx-font-size: 24px;
+    -fx-font-family: Yu Gothic Light;
+    -fx-base: transparent;
+    -fx-background: transparent;
+    -fx-background-color: #34D0BA;
+    -fx-focus-color: transparent;
+    -fx-border-color: black;
+    -fx-effect: null;
+
+}
+
+.button:hover{
+    -fx-background-color: #6065C4;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-text-fill: -fx-text-base-color;
+}
+
+.button:pressed{
+    -fx-background-color: #6065C4;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-text-fill: -fx-text-base-color;
+
+}
+
+#close_button{
+ -fx-text-fill: black;
+    -fx-font-size: 24px;
+    -fx-font-family: Yu Gothic Light;
+    -fx-base: transparent;
+    -fx-background: transparent;
+    -fx-background-color: #E1004C;
+    -fx-focus-color: transparent;
+    -fx-border-color: black;
+    -fx-effect: null;
+}
+#close_button:hover{
+    -fx-background-color: #6065C4;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-text-fill: -fx-text-base-color;
+}
+
+#close_button:pressed{
+    -fx-background-color: #6065C4;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-text-fill: -fx-text-base-color;
+
+}
+

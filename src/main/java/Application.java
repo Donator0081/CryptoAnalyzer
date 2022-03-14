@@ -1,23 +1,32 @@
-import commands.Action;
-import commands.Decrypt;
-import commands.Encrypt;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
-public class Application {
+import java.util.Objects;
+
+public class Application extends javafx.application.Application {
 
 
     public static void main(String[] args) {
-        Action encrypt = new Encrypt(3);
-        Action decrypt = new Decrypt(3);
-        String text = "тысячи лет происходили вакханаллии";
-        System.out.println("Length: " + text.length());
-        System.out.println("Before encrypt " + text);
-        text = encrypt.doAction(text);
-        System.out.println("After encrypt " + text);
-        System.out.println("-----------------");
-        System.out.println("Before decrypt " + text);
-        String text2 = decrypt.doAction(text);
-        System.out.println("After decrypt "+text2);
-        System.out.println("Length: " + text2.length());
+        launch();
+    }
 
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/MainView.fxml")));
+        Scene scene = new Scene(root);
+        scene.setFill(Color.TRANSPARENT);
+        stage.initStyle(StageStyle.TRANSPARENT);
+        root.setOnMousePressed(pressEvent -> {
+            root.setOnMouseDragged(dragEvent -> {
+                stage.setX(dragEvent.getScreenX() - pressEvent.getSceneX());
+                stage.setY(dragEvent.getScreenY() - pressEvent.getSceneY());
+            });
+        });
+        stage.setScene(scene);
+        stage.show();
     }
 }
