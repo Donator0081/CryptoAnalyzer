@@ -10,10 +10,7 @@ import data.FileWorker;
 import data.FileWriterForAction;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -25,6 +22,10 @@ public class MainController implements Initializable {
 
     @FXML
     private Spinner<Integer> spinner;
+    @FXML
+    private Label label_key;
+    @FXML
+    private Label label_action;
 
     @FXML
     private SpinnerValueFactory<Integer> spinnerValueFactory;
@@ -50,6 +51,9 @@ public class MainController implements Initializable {
     @FXML
     void bruteForceOnAction() {
         action = BruteForce.getInstance;
+        spinner.setVisible(false);
+        label_key.setVisible(false);
+        label_action.setText("Brute Force");
     }
 
     @FXML
@@ -67,11 +71,17 @@ public class MainController implements Initializable {
     @FXML
     void decryptOnAction() {
         action = Decrypt.getInstance;
+        spinner.setVisible(true);
+        label_key.setVisible(true);
+        label_action.setText("Decrypt");
     }
 
     @FXML
     void encryptOnAction() {
         action = Encrypt.getInstance;
+        spinner.setVisible(true);
+        label_key.setVisible(true);
+        label_action.setText("Encrypt");
     }
 
     @FXML
@@ -94,5 +104,9 @@ public class MainController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         spinnerValueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, Constants.ALPHABET.length-1,1);
         spinner.setValueFactory(spinnerValueFactory);
+        spinner.setVisible(true);
+        label_key.setVisible(true);
+        action = Encrypt.getInstance;
+        label_action.setText("Encrypt");
     }
 }

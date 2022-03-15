@@ -2,7 +2,6 @@ package commands;
 
 import constants.Constants;
 
-
 public class Encrypt implements Action {
 
     public static final Encrypt getInstance = new Encrypt();
