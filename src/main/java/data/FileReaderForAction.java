@@ -6,17 +6,27 @@ import java.io.IOException;
 
 public class FileReaderForAction implements FileWorker{
 
-    public static String readFromFile(String text){
+    public static final FileReaderForAction getInstance = new FileReaderForAction();
+
+    public String readFromFile(String text){
         StringBuilder builder = null;
         try(BufferedReader fileReader = new BufferedReader(new FileReader(text))) {
             builder = new StringBuilder();
             while (fileReader.ready()){
-                builder.append(fileReader.read());
+                builder.append((char) fileReader.read());
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
         assert builder != null;
         return builder.toString();
+    }
+
+    @Override
+    public void writeToFile(String fileName, String text) {
+
+    }
+
+    private FileReaderForAction() {
     }
 }

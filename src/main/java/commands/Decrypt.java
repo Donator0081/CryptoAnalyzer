@@ -3,10 +3,11 @@ package commands;
 import constants.Constants;
 
 public class Decrypt implements Action {
-    private int key;
+
+    public static final Decrypt getInstance = new Decrypt();
 
     @Override
-    public String doAction(String text) {
+    public String doAction(String text, int key) {
         StringBuilder builder = new StringBuilder();
         int counter = 0;
         while (counter < text.length()) {
@@ -25,7 +26,6 @@ public class Decrypt implements Action {
         return builder.toString();
     }
 
-    public Decrypt(int key) {
-        this.key = key;
+    private Decrypt() {
     }
 }

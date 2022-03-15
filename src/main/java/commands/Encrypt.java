@@ -4,11 +4,11 @@ import constants.Constants;
 
 
 public class Encrypt implements Action {
-    private int key;
 
+    public static final Encrypt getInstance = new Encrypt();
 
     @Override
-    public String doAction(String text) {
+    public String doAction(String text, int key) {
         StringBuilder builder = new StringBuilder();
         int counter = 0;
         while (counter < text.length()) {
@@ -27,7 +27,6 @@ public class Encrypt implements Action {
         return builder.toString();
     }
 
-    public Encrypt(int key) {
-        this.key = key;
+    private Encrypt() {
     }
 }
