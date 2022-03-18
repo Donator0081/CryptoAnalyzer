@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class FileReaderForAction implements FileWorker{
+public class FileReaderForAction extends FileManager{
 
     public static final FileReaderForAction getInstance = new FileReaderForAction();
 
@@ -22,10 +22,6 @@ public class FileReaderForAction implements FileWorker{
         return builder.toString();
     }
 
-    @Override
-    public void writeToFile(String fileName, String text) {
-
-    }
 
     private FileReaderForAction() {
     }

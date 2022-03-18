@@ -2,7 +2,7 @@ package data;
 
 import java.io.*;
 
-public class FileWriterForAction implements FileWorker {
+public class FileWriterForAction extends FileManager {
 
     public static final FileWriterForAction getInstance = new FileWriterForAction();
 
@@ -12,9 +12,6 @@ public class FileWriterForAction implements FileWorker {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    private FileWriterForAction() {
     }
 
     @Override
