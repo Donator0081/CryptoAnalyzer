@@ -84,7 +84,7 @@
                   <Blend />
                </effect>
             </Button>
-            <Button id="close_button" fx:id="closeButton" cancelButton="true" mnemonicParsing="false" onAction="#closeOnAction" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 0 20 0 0; -fx-border-radius: 0 20 0 0;" text="Close">
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#compileOnAction" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 0 20 0 0; -fx-border-radius: 0 20 0 0;" text="Run">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -112,7 +112,7 @@
                <effect>
                   <Blend />
                </effect></Button>
-            <Button mnemonicParsing="false" onAction="#compileOnAction" prefHeight="100.0" prefWidth="333.0" style="-fx-background-radius: 0 0 20 0; -fx-border-radius: 0 0 20 0;" text="Compile">
+            <Button id="close_button" fx:id="closeButton" mnemonicParsing="false" onAction="#closeOnAction" prefHeight="100.0" prefWidth="333.0" style="-fx-background-radius: 0 0 20 0; -fx-border-radius: 0 0 20 0;" text="Close">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
