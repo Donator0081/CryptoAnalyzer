@@ -7,6 +7,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.IOException;
 import java.util.Objects;
 
 public class Application extends javafx.application.Application {
@@ -17,8 +18,8 @@ public class Application extends javafx.application.Application {
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ru.javarush.ivanov.cryptoanalyzer/fxml/MainView.fxml")));
+    public void start(Stage stage) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/ru.javarush.ivanov.cryptoanalyzer/fxml/MainView.fxml")));
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);

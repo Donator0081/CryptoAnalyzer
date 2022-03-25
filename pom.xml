@@ -46,7 +46,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                src.main.java.ru.javarush.ivanov.cryptoanalyzer.Application.java
+                                ru.javarush.ivanov.cryptoanalyzer/ru.javarush.ivanov.cryptoanalyzer.Application
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
