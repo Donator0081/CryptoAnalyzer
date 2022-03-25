@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.javarush.ivanov.cryptoanalyzer</groupId>
+    <groupId>ru.javarush.ivanov</groupId>
     <artifactId>CryptoAnalyzer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -13,11 +13,6 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.openjfx</groupId>-->
-<!--            <artifactId>javafx-controls</artifactId>-->
-<!--            <version>17.0.2</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -41,14 +36,6 @@
                     <target>17</target>
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.openjfx</groupId>-->
-<!--                <artifactId>javafx-maven-plugin</artifactId>-->
-<!--                <version>0.0.8</version>-->
-<!--                <configuration>-->
-<!--                    <mainClass>src/main/java/view/Application.java</mainClass>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -59,7 +46,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                src/main/java/view/Application.java
+                                src.main.java.ru.javarush.ivanov.cryptoanalyzer.Application.java
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

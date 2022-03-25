@@ -1,4 +1,4 @@
-package constants;
+package ru.javarush.ivanov.cryptoanalyzer.constants;
 
 public class Constants {
     public static final char[] ALPHABET = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з',

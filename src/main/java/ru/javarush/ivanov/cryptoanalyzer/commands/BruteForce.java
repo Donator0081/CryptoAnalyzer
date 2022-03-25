@@ -1,6 +1,6 @@
-package commands;
+package ru.javarush.ivanov.cryptoanalyzer.commands;
 
-import constants.Constants;
+import ru.javarush.ivanov.cryptoanalyzer.constants.Constants;
 
 public class BruteForce implements Action {
     public static final BruteForce getInstance = new BruteForce();

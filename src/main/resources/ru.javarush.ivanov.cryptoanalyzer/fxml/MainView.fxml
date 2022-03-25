@@ -44,7 +44,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1000.0" style="-fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20;" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1000.0" style="-fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20;" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.javarush.ivanov.cryptoanalyzer.controllers.MainController">
    <top>
       <HBox prefHeight="103.0" prefWidth="999.0" style="-fx-background-radius: 20 20 0 0; -fx-border-radius: 20 20 0 0;" BorderPane.alignment="CENTER">
          <children>

@@ -1,4 +1,4 @@
-package data;
+package ru.javarush.ivanov.cryptoanalyzer.data;
 
 public abstract class FileManager implements FileWorker {
     @Override

@@ -1,4 +1,4 @@
-package data;
+package ru.javarush.ivanov.cryptoanalyzer.data;
 
 public interface FileWorker {
     String readFromFile(String text);

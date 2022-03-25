@@ -1,4 +1,4 @@
-package data;
+package ru.javarush.ivanov.cryptoanalyzer.data;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

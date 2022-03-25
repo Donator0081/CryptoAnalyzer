@@ -1,13 +1,13 @@
-package controllers;
+package ru.javarush.ivanov.cryptoanalyzer.controllers;
 
-import commands.Action;
-import commands.BruteForce;
-import commands.Decrypt;
-import commands.Encrypt;
-import constants.Constants;
-import data.FileReaderForAction;
-import data.FileWorker;
-import data.FileWriterForAction;
+import ru.javarush.ivanov.cryptoanalyzer.commands.Action;
+import ru.javarush.ivanov.cryptoanalyzer.commands.BruteForce;
+import ru.javarush.ivanov.cryptoanalyzer.commands.Decrypt;
+import ru.javarush.ivanov.cryptoanalyzer.commands.Encrypt;
+import ru.javarush.ivanov.cryptoanalyzer.constants.Constants;
+import ru.javarush.ivanov.cryptoanalyzer.data.FileReaderForAction;
+import ru.javarush.ivanov.cryptoanalyzer.data.FileWorker;
+import ru.javarush.ivanov.cryptoanalyzer.data.FileWriterForAction;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
